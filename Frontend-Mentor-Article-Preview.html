@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Shortcut Icon -->
+
+    <title>Frontend Mentor | Article preview component</title>
+    <style>
+        /* mobile: 375px;
+            Desktop: 1440px;
+
+            colors
+            Very Dark Grayish Blue: hsl(217, 19%, 35%)
+            Desaturated Dark Blue: hsl(214, 17%, 51%)
+            Grayish Blue: hsl(212, 23%, 69%)
+            Light Grayish Blue: hsl(210, 46%, 95%)
+
+            Body Copy
+            Font size: 13px
+
+            Headings
+            Family: Manrope
+            Weights: 500, 700
+         */
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+        html {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        body {
+            background: rgb(218, 255, 244);
+        }
+
+        .article-preview {
+            background: #fff;
+            width: 800px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            border: 1px solid rgba(0, 0, 0, .125);
+        }
+
+        .article-preview__image-container {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .article-preview__image {
+            width: 100%;
+            height: 100%;
+            border-radius: .25rem;
+            margin: 0;
+            margin: 0;
+
+        }
+
+        .article-preview__content {
+            padding: 1rem 0;
+        }
+
+        .article-preview__text {
+            padding: 0.2rem 2rem;
+        }
+
+        .article-preview__title {
+            font-size: 22px;
+            font-weight: 700;
+            color: hsl(217, 19%, 35%);
+            margin: 1.2rem 1rem;
+        }
+
+        .article-preview__describe {
+            margin: 1.2rem 1rem;
+            font-size: 13px;
+            font-weight: 500;
+            color: hsl(214, 17%, 51%);
+        }
+
+        .article-preview__footer {
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .social {
+            width: 15px;
+            height: 15px;
+        }
+
+        .social_share {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            padding: 5px;
+            background: rgb(231, 245, 244);
+        }
+
+        .author_profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .author_details {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.7rem;
+        }
+
+        @media (max-width: 850px) {
+            .article-preview {
+                width: 400px;
+                height: 400px;
+                flex-wrap: wrap;
+                background: #fff;
+                border: 1px solid rgba(0, 0, 0, .125);
+
+            }
+
+            .article-preview__text {
+                padding: 0.2rem 1rem;
+            }
+
+            .article-preview__title {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="article-preview">
+        <div class="article-preview__image-container">
+            <img class="article-preview__image" src="images/drawers.jpg" alt="">
+        </div>
+
+        <section class="article-preview__content">
+            <div class="article-preview__text">
+                <h5 class="article-preview__title">Shift the overall look and feel by adding these wonderful touches to
+                    furniture in your home
+                </h5>
+                <p class="article-preview__describe">Ever been in a room and felt like something was missing? Perhaps it
+                    felt
+                    slightly bare and uninviting. I've got same simple tips to help you make any room feel complete.
+                </p>
+            </div>
+            <footer class="article-preview__footer">
+                <div class="author-info">
+                    <img class="author_profile" src="images/avatar-michelle.jpg" alt="">
+                    <div class="author_details">
+                        <span>Michelle Appleton</span>
+                        <span>28 June 2020</span>
+                    </div>
+                </div>
+                <div class="social">
+                    <img class="social_share" src="images/icon-share.svg" alt="">
+                </div>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>
